@@ -1,0 +1,137 @@
+.service-viewer-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Montserrat", sans-serif;
+  overflow: auto;
+}
+
+.service-viewer-title-main {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  background-color: #a0c0f1b3;
+  color: #114a9fb3;
+  text-align: center;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.service-viewer-all-services {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  overflow: auto;
+}
+
+.service-viewer-service {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-self: center;
+}
+.service-viewer-service-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-viewer-service-info div span {
+  color: #9ecc3b;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.service-viewer-service-green {
+  width: 100%;
+  height: 30px;
+  background-color: #9ecc3bb4;
+  display: flex;
+  align-self: center;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+.service-viewer-icon-container {
+  width: 30%;
+  height: 100%;
+  display: flex;
+}
+.service-viewer-icon-container img:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+.back-arrow:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+.back-arrow {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.service-viewer-icon-container img {
+  margin-left: 20px;
+}
+#plus-icon {
+  margin-left: 120px;
+}
+.service-viewer-title {
+  line-height: 30px;
+  margin-left: 50px;
+  width: 70%;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.client-div {
+  margin-left: 3px;
+}
+
+.employee-div {
+  margin-left: 3px;
+}
+
+.client-div:hover {
+  cursor: pointer;
+}
+.employee-div:hover {
+  cursor: pointer;
+}
+.no-service-employee {
+  align-self: center;
+  font-size: 2em;
+  margin-top: 25%;
+  font-style: italic;
+  color: gray;
+  font-weight: bold;
+}
+
+@media (max-width: 1300px) {
+  .service-viewer-service {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .service-viewer-service {
+    width: 100%;
+    padding: 10px;
+  }
+  .service-viewer-title {
+    width: 70%;
+  }
+  .service-viewer-icon-container {
+    width: 30%;
+  }
+  #plus-icon {
+    margin: 0px;
+  }
+}

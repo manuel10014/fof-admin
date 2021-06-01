@@ -1,0 +1,197 @@
+.directory-container {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.directory-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  margin-left: 3vw;
+  color: #114a9f;
+  margin-top: 2.5vh;
+  width: 80%;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+/* Left container */
+.directory-left-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+  background-color: #86a7d8;
+}
+
+.directory-register-employee {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 80%;
+  padding: 10px;
+  border-radius: 5%;
+  height: 50px;
+  box-shadow: 0;
+  border-color: transparent;
+  background-color: #9ecc3bb4;
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: whitesmoke;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.directory-register-employee:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #aac76a;
+  color: white;
+}
+
+.react-search-field {
+  height: 6% !important;
+  width: 80% !important;
+  align-self: center;
+  border: none !important;
+}
+
+.react-search-field-input {
+  height: 100% !important;
+  width: 90% !important;
+  padding-left: 13px !important;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 15px;
+}
+
+.react-search-field-button {
+  height: 100% !important;
+  width: 20% !important;
+  padding: 0 !important;
+}
+.searchable-list-empty {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.directory-list-container {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 80%;
+  align-self: center;
+  padding-bottom: 10px;
+}
+.employee-name-list {
+  text-align: center;
+  padding: 0 !important;
+  height: 30px;
+}
+.employee-name-list:hover {
+  cursor: pointer;
+  transition: 0.7s;
+  background-color: gray;
+  padding: 0 !important;
+  color: white;
+}
+
+/* Right container */
+
+.directory-right-container {
+  width: 80%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+.react-search-field {
+  margin-top: 30px;
+}
+.searchable-div {
+  display: flex;
+  width: 80%;
+  align-self: center;
+
+  flex-direction: column;
+}
+.searchable-input {
+  background-color: white;
+  border-bottom: 0;
+  width: 100%;
+  align-self: center;
+}
+.searchable-input-control {
+  background-color: white;
+  margin-top: 10px;
+  position: relative;
+}
+.searchable-input-control input {
+  color: black !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+.searchable-list__visible {
+  background-color: white;
+}
+
+.searchable-list-item__active {
+  color: black !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+.searchable-list-item__active:hover {
+  background-color: gray;
+}
+
+.searchable-list-item {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.searchable-list-item:hover {
+  background-color: gray;
+}
+
+.searchable-input-arrow {
+  background-color: #114a9f;
+}
+
+.searchable-input-arrow {
+  color: black;
+}
+@media (max-width: 1000px) {
+  .directory-left-container {
+    width: 30%;
+  }
+  .directory-right-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 800px) {
+  .directory-container {
+    flex-direction: column;
+  }
+  .directory-left-container {
+    width: 100%;
+  }
+  .directory-title {
+    align-self: center;
+    text-align: center;
+  }
+  .directory-right-container {
+    width: 100%;
+  }
+  .react-search-field-input {
+    height: 5vh !important;
+    width: 90% !important;
+    padding: 0 !important;
+  }
+
+  .react-search-field-button {
+    height: 5vh !important;
+    width: 20% !important;
+    padding: 0 !important;
+  }
+}

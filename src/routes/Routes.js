@@ -1,0 +1,14 @@
+export const HOME = "/";
+export const SIGN_IN = "/signin";
+export const REGISTER_SERVICE = "/registerservice";
+export const ADMIN_DIRECTORY = "/admindirectory";
+export const EDIT_SERVICE = "/editservice";
+export const EMPLOYEE_DIRECTORY = "/employeedirectory";
+export const CLIENT_DIRECTORY = "/clientdirectory";
+export const SERVICE_DIRECTORY = "/servicedirectory";
+export const SPECIFIC_SERVICE = "/specificservice";
+export const AGENDA = "/agenda";
+export const FORGOTPW = "/forgotpw";
+export const CHANGEPW = "/changepw/:userid";
+export const REPORTS = "/stats";
+export const CONTACTS = "/contacts"

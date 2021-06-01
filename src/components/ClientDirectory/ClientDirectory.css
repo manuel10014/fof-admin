@@ -1,0 +1,87 @@
+.directory-container {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.directory-title-client {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  margin-left: 3vw;
+  color: #114a9f;
+  margin-top: 2.5vh;
+  width: 80%;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+/* Left container */
+.directory-left-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  background-color: #86a7d8;
+}
+
+.directory-register-employee:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #aac76a;
+  color: white;
+}
+
+.directory-list-container {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 80%;
+  align-self: center;
+  padding: 0;
+}
+.client-name-list {
+  text-align: center;
+  margin-top: 10px;
+}
+.client-name-list:hover {
+  cursor: pointer;
+  transition: 0.7s;
+  background-color: gray;
+}
+
+/* Right container */
+
+.directory-right-container {
+  width: 70%;
+  display: flex;
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .directory-left-container {
+    width: 30%;
+  }
+  .directory-right-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 800px) {
+  .directory-container {
+    flex-direction: column;
+  }
+  .directory-left-container {
+    width: 100%;
+  }
+  .directory-title {
+    align-self: center;
+    text-align: center;
+  }
+  .directory-title-client {
+    align-self: center;
+    text-align: center;
+  }
+  .directory-right-container {
+    width: 100%;
+  }
+}
