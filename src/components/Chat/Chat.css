@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 40%;
+  width: 45%;
 }
 .chat-service-information {
   width: 100%;
@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
+  margin-top: 15px;
   padding-left: 50px;
 }
 
@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
 
-  height: 70%;
+  height: 100%;
   width: 60%;
 }
 .chat-information-box div.other-info {
@@ -69,8 +69,8 @@
 .chat-container {
   display: flex;
 
-  height: 75%;
-
+  height: 85%;
+  margin-top: 25px;
   padding: 30px 50px 30px 50px;
 }
 
@@ -78,8 +78,8 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 100%;
-
+  width: 80%;
+  margin-left: auto;
   border-radius: 10px;
   border: solid#9fcc3b 2px;
   padding-top: 10px;
@@ -97,6 +97,7 @@
 
 .write-area {
   margin-top: 10px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   height: 15%;
@@ -117,7 +118,7 @@ textarea:focus {
   outline: none;
 }
 .textArea {
-  padding: 10px;
+  padding: 15px;
   font-family: 'Roboto', sans-serif;
   width: 85%;
   height: 80%;
@@ -133,8 +134,8 @@ textarea:focus {
   margin: auto;
 }
 .write-area img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 .write-area img:hover {
   cursor: pointer;

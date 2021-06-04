@@ -49,7 +49,7 @@ const ChangePW = ({ ...props }) => {
 
   return (
     <div className="forgotpw-container">
-      <div className="header-pw">PORTAL DE ADMINSITRADORES</div>
+      <div className="header-pw">PORTAL DE ADMINISTRADORES</div>
       <div className="header-img-login-pw">
         <img src={Logo} alt="" className="header-img-login-pw" />
       </div>

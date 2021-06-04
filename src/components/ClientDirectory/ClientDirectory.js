@@ -57,7 +57,7 @@ const ClientDirectory = (props) => {
   useEffect(() => {
     if (chosenCity) {
       setCurrentClientArray(
-        allClients.filter((client) => client.city === chosenCity.value)
+        allClients.filter((client) => client.city === chosenCity)
       );
       setShowDropDownList(false);
     }

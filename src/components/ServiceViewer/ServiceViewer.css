@@ -31,7 +31,7 @@
 .service-viewer-service {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 65%;
   align-self: center;
 }
 .service-viewer-service-info {
@@ -56,9 +56,10 @@
   padding: 5px;
 }
 .service-viewer-icon-container {
-  width: 30%;
+  width: 25%;
   height: 100%;
   display: flex;
+  margin-right: 10px;
 }
 .service-viewer-icon-container img:hover {
   cursor: pointer;
@@ -84,8 +85,8 @@
 }
 .service-viewer-title {
   line-height: 30px;
-  margin-left: 50px;
-  width: 70%;
+  margin-left: 10px;
+  width: 75%;
   letter-spacing: 2px;
   font-weight: bold;
 }

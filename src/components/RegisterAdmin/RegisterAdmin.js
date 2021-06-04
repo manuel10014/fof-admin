@@ -9,6 +9,7 @@ import BackArrow from '../../assets/images/backarrow.png'
 import { confirmAlert } from 'react-confirm-alert' // Import
 import 'react-confirm-alert/src/react-confirm-alert.css' // Import css
 import { TUNNEL } from '../../assets/constants/url'
+import "react-widgets/styles.css";
 
 const RegisterAdmin = ({
   selectedAdmin,

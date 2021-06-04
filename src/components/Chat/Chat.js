@@ -158,7 +158,7 @@ const Chat = ({
                 timeConverter(startHour) + ' - ' + timeConverter(endHour)}
             </span>
           </div>
-          <div className="other-info" style={{ textTransform: 'capitalize' }}>
+          <div className="other-info" style={{ textTransform: 'capitalize'}}>
             <span>Cliente: </span> {userInfo.fullName}
           </div>
         </div>

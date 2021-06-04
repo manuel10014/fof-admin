@@ -68,3 +68,8 @@ function Toolbar(props) {
 }
 
 export default Toolbar;
+
+
+/*<li>
+    <Link to={ROUTES.TOOLS}>Herramientas</Link>
+  </li>*/

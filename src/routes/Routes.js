@@ -12,3 +12,4 @@ export const FORGOTPW = "/forgotpw";
 export const CHANGEPW = "/changepw/:userid";
 export const REPORTS = "/stats";
 export const CONTACTS = "/contacts"
+export const TOOLS = "/tools"

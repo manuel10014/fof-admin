@@ -420,7 +420,7 @@ const RegisterContact = ({
               name=""
               alt=""
               type="submit"
-              src={require('./mark.png')}
+              src={require('./mark.png').default}
               className="back-button-register-employee"
               onClick={() => {
                 if (!editing) {

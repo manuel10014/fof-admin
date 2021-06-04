@@ -325,7 +325,7 @@ const EditService = (props) => {
         Seleccione servicio a editar:
       </div>
       <DropdownList
-        style={{ width: '30%', margin: '0' }}
+        style={{ width: '40%', margin: '0' }}
         data={allServices.map((service) => service.name)}
         value={serviceName}
         onChange={(value) => handleServiceChange(value)}

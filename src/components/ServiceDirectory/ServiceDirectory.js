@@ -49,7 +49,7 @@ const ServiceDirectory = (props) => {
     if (chosenCity) {
       setCurrentServiceArray(
         allServices.filter(
-          (service) => service.cityService === chosenCity.value
+          (service) => service.cityService === chosenCity
         )
       );
     }
@@ -65,7 +65,7 @@ const ServiceDirectory = (props) => {
             value={chosenCity} //if value is not item of options array, it would be ignored on mount
             placeholder="Ciudad" // by default "Search"
             notFoundText="No se encontraron ciudades" // by default "No result found"
-            options={differentCities && differentCities}
+            options={differentCities}
             onSelect={(option) => {
               setChosenCity(option); // as example - {value: '', label: 'All'}
             }}

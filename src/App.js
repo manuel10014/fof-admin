@@ -28,8 +28,10 @@ import "react-toastify/dist/ReactToastify.css";
 import CustomToast from "./components/custom-toast";
 import Pusher from "pusher-js";
 import { TUNNEL } from "./assets/constants/url";
-import { RemoveScrollBar } from "react-remove-scroll-bar";
+//import Tools from "./components/Tools/Tools";
 // Watch "./App.css for @media syntax"
+//<Route exact path={ROUTES.TOOLS} component={Tools} />
+
 toast.configure({
   autoClose: 8000,
   draggable: false,
@@ -94,7 +96,6 @@ function App() {
   return (
     <Router>
       <div className="totalContainer">
-        <RemoveScrollBar />
 
         <Toolbar sideFunction={drawerToggleClickHandler} />
         {sideDrawerOpen && <Backdrop click={drawerToggleClickHandler} />}
@@ -122,7 +123,6 @@ function App() {
               path={ROUTES.ADMIN_DIRECTORY}
               component={AdminDirectory}
             />
-
             <Route
               exact
               path={ROUTES.REGISTER_SERVICE}

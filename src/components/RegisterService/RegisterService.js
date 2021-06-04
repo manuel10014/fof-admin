@@ -214,7 +214,7 @@ const RegisterService = (props) => {
       </div>
       <div className="city-department-container">
         <DropdownList
-          style={{ width: '20%', margin: '0px' }}
+          style={{ width: '30%', margin: '0px' }}
           data={allDepartments}
           value={department}
           onChange={(value) => handleDepartmentChange(value)}
@@ -222,7 +222,7 @@ const RegisterService = (props) => {
         />
 
         <DropdownList
-          style={{ width: '20%' }}
+          style={{ width: '30%' }}
           value={city}
           data={cities}
           onChange={(value) => setCity(value)}

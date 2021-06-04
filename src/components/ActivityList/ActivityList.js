@@ -6,7 +6,6 @@ import {
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 import { timeConverter } from '../ServiceViewer/ServiceViewerFcts'
-import axios from 'axios'
 import { TUNNEL } from '../../assets/constants/url'
 const ActivityList = ({
   eventStillToCome,

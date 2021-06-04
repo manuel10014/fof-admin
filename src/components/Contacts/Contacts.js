@@ -21,23 +21,23 @@ const Contact=() => {
     const [currentContactsArray, setCurrentContactsArray] = useState([]);
 
     const getAllContacts = async () => {
-        const config = {
-          headers: {
-            "content-type": "application/json",
-          },
-        };
-        try {
-          const res = await axios.get(
-            `${TUNNEL}/api/users/all-contacts-different-cities`,
-            config
-          );
-          console.log(res.data)
-          setAllContacts(res.data.contacts);
-          setDifferentCities(res.data.arrayCities);
-        } catch (e) {
-          console.log(e.response.data);
-        }
+      const config = {
+        headers: {
+          "content-type": "application/json",
+        },
       };
+      try {
+        const res = await axios.get(
+          `${TUNNEL}/api/users/all-contacts-different-cities`,
+          config
+        );
+        console.log(res.data)
+        setAllContacts(res.data.contacts);
+        setDifferentCities(res.data.arrayCities);
+      } catch (e) {
+        console.log(e.response.data);
+      }
+    };
 
       useEffect(() => {
         getAllContacts();
@@ -46,7 +46,7 @@ const Contact=() => {
       useEffect(() => {
         if (chosenCity) {
           setCurrentContactsArray(
-            allContacts.filter((contacts) => contacts.city === chosenCity.value)
+            allContacts.filter((contacts) => contacts.city === chosenCity)
           );
           setShowDropDownList(false);
         }
@@ -78,15 +78,15 @@ const Contact=() => {
                 <div className="directory-title">Contactos</div>
                 <div className="searchable-div">
                 <div>Filtrar Ciudad:</div>
-                    <Searchable
-                    value={chosenCity} //if value is not item of options array, it would be ignored on mount
-                    placeholder="Ciudad" // by default "Search"
-                    notFoundText="No se encontraron ciudades" // by default "No result found"
-                    options={differentCities && differentCities}
-                    onSelect={(option) => {
-                        setChosenCity(option); // as example - {value: '', label: 'All'}
-                    }}
-                    listMaxHeight={200} //by default 140
+                  <Searchable
+                  value={chosenCity} //if value is not item of options array, it would be ignored on mount
+                  placeholder="Ciudad" // by default "Search"
+                  notFoundText="No se encontraron ciudades" // by default "No result found"
+                  options={differentCities}
+                  onSelect={(option) => {
+                      setChosenCity(option); // as example - {value: '', label: 'All'}
+                  }}
+                  listMaxHeight={200} //by default 140
                 />
                 </div>
                 <SearchField
@@ -126,19 +126,19 @@ const Contact=() => {
                 </button>
             </div>
             <div className="directory-right-container">
-                {currentSelectedContacts && !showEditContact && (
-                <ContactProfile
-                    contact={currentSelectedContacts}
-                    showEditMenu={showEditMenu}
-                />
+              {currentSelectedContacts && !showEditContact && (
+              <ContactProfile
+                  contact={currentSelectedContacts}
+                  showEditMenu={showEditMenu}
+              />
             )}
             {showRegisterContact && <RegisterContact />}
             {showEditContact && (
-                <RegisterContact
-                    setShowEditContact={setShowEditContact}
-                    editing={true}
-                    selectedContact={currentSelectedContacts}
-                />
+              <RegisterContact
+                  setShowEditContact={setShowEditContact}
+                  editing={true}
+                  selectedContact={currentSelectedContacts}
+              />
             )}
             </div>
         </div>

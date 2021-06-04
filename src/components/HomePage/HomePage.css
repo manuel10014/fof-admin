@@ -6,11 +6,13 @@
   padding: 0;
   height: 100vh;
   background-color: blue;
+  overflow: hidden;
 }
 
 .background-login {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 hr {

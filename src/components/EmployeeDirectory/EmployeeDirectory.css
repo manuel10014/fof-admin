@@ -112,7 +112,6 @@
   display: flex;
   width: 80%;
   align-self: center;
-
   flex-direction: column;
 }
 .searchable-input {

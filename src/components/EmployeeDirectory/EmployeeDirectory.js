@@ -63,7 +63,7 @@ const EmployeeDirectory = (props) => {
   useEffect(() => {
     if (chosenCity) {
       setCurrentEmployeeArray(
-        allEmployees.filter((employee) => employee.city === chosenCity.value)
+        allEmployees.filter((employee) => employee.city === chosenCity)
       );
       setShowDropDownList(false);
     }

@@ -3,7 +3,6 @@ import { DropdownList } from 'react-widgets'
 import ProfilePic from './userDefault.png'
 import BackArrow from '../../assets/images/backarrow.png'
 import { TUNNEL } from '../../assets/constants/url'
-
 const RegisterPart1 = ({
   editing,
   selectedEmployee,
@@ -246,7 +245,7 @@ const RegisterPart1 = ({
               >
                 <img
                   alt=""
-                  src={require('./regresar.png')}
+                  src={require("./regresar.png")}
                   className="back-button-register-employee"
                   onClick={() => setShowEditEmployee(false)}
                 />
@@ -264,7 +263,7 @@ const RegisterPart1 = ({
               </div>
               <div style={{ textAlign: 'center' }}>
                 <img
-                  src={require('./avanzar.png')}
+                  src={require("./avanzar.png")}
                   className="back-button-register-employee"
                   alt=""
                   onClick={() => setNext(true)}

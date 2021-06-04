@@ -56,7 +56,7 @@ const AdminDirectory = (props) => {
   useEffect(() => {
     if (chosenCity) {
       setCurrentAdminArray(
-        allAdmins.filter((admin) => admin.city === chosenCity.value)
+        allAdmins.filter((admin) => admin.city === chosenCity)
       );
       setShowDropDownList(false);
     }
