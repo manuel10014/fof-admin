@@ -19,8 +19,6 @@ const RegisterService = (props) => {
   const [citiesAvailable, setCitiesAvailable] = useState([])
   const [timeRestrictions, setTimeRestrictions] = useState([[0, 0]])
   const [activities, setActivities] = useState([''])
-  const [windowWidth, setWindowWidth] = useState(null)
-  const [windowHeight, setWindowHeight] = useState(null)
   const [department, setDepartment] = useState('')
   const [city, setCity] = useState('')
   const [cities, setCities] = useState([])

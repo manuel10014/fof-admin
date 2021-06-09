@@ -333,7 +333,8 @@ const RegisterContact = ({
         style={{
           display: 'flex',
           flexDirection: 'column',
-          width: '50%',
+          width: '45%',
+          marginLeft: "10%"
         }}
       >
         <div className="textDiv" style={{ marginLeft: '20%' }}>
@@ -342,7 +343,7 @@ const RegisterContact = ({
 
         <DropdownList
           style={{
-            width: '83%',
+            width: '90%',
 
             borderColor: 'lightgray',
           }}
@@ -359,7 +360,7 @@ const RegisterContact = ({
           Ciudad:
         </div>
         <DropdownList
-          style={{ width: '85%', marginLeft: '19%' }}
+          style={{ width: '80%', marginLeft: '19%' }}
           value={city}
           data={cities}
           onChange={(value) => setCity(value)}

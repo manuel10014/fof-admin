@@ -131,7 +131,7 @@ const RegisterPart2 = ({
             <img
               className="plus-icon-register-employee-cv"
               alt="CV_default"
-              src={fileCV !== null ? DocumentReady : require('./plusBlue.png')}
+              src={fileCV !== null ? DocumentReady : require('./plusBlue.png').default}
               onClick={handleClickCV}
             />
           </div>
@@ -152,7 +152,7 @@ const RegisterPart2 = ({
             <div style={{ alignSelf: 'center' }}>ARL</div>
             <img
               alt="CV_default"
-              src={fileARL !== null ? DocumentReady : require('./plusBlue.png')}
+              src={fileARL !== null ? DocumentReady : require('./plusBlue.png').default}
               onClick={handleClickARL}
               className="plus-icon-register-employee-arl"
             />
@@ -223,7 +223,7 @@ const RegisterPart2 = ({
                       type="submit"
                       className="remove-icon-register-service"
                       style={{ marginLeft: '10px' }}
-                      src={require('./remove.png')}
+                      src={require('./remove.png').default}
                       onClick={() => skillRemover(idx)}
                     />
                   )}
@@ -264,7 +264,7 @@ const RegisterPart2 = ({
               name=""
               alt=""
               type="submit"
-              src={require('./regresar.png')}
+              src={require('./regresar.png').default}
               className="back-button-register-employee"
               value="Regresar"
               onClick={() => setNext(false)}
@@ -315,7 +315,7 @@ const RegisterPart2 = ({
               name=""
               alt=""
               type="submit"
-              src={require('./mark.png')}
+              src={require('./mark.png').default}
               className="back-button-register-employee"
               onClick={() => {
                 if (!editing) {

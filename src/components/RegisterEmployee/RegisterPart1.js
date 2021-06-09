@@ -169,7 +169,8 @@ const RegisterPart1 = ({
             style={{
               display: 'flex',
               flexDirection: 'column',
-              width: '50%',
+              width: '45%',
+              marginLeft: "10%"
             }}
           >
             <div className="textDiv" style={{ marginLeft: '20%' }}>
@@ -178,8 +179,7 @@ const RegisterPart1 = ({
 
             <DropdownList
               style={{
-                width: '83%',
-
+                width: '90%',
                 borderColor: 'lightgray',
               }}
               data={allDepartments}
@@ -195,7 +195,7 @@ const RegisterPart1 = ({
               Ciudad:
             </div>
             <DropdownList
-              style={{ width: '85%', marginLeft: '19%' }}
+              style={{ width: '80%', marginLeft: '19%' }}
               value={city}
               data={cities}
               onChange={(value) => setCity(value)}
@@ -245,7 +245,7 @@ const RegisterPart1 = ({
               >
                 <img
                   alt=""
-                  src={require("./regresar.png")}
+                  src={require("./regresar.png").default}
                   className="back-button-register-employee"
                   onClick={() => setShowEditEmployee(false)}
                 />
@@ -263,7 +263,7 @@ const RegisterPart1 = ({
               </div>
               <div style={{ textAlign: 'center' }}>
                 <img
-                  src={require("./avanzar.png")}
+                  src={require("./avanzar.png").default}
                   className="back-button-register-employee"
                   alt=""
                   onClick={() => setNext(true)}
@@ -283,7 +283,7 @@ const RegisterPart1 = ({
           ) : (
             <div>
               <img
-                src={require('./avanzar.png')}
+                src={require('./avanzar.png').default}
                 className="advance-icon-register-employee"
                 onClick={() => setNext(true)}
                 alt=""

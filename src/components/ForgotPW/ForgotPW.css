@@ -4,8 +4,8 @@
   height: 95vh;
   width: 100%;
   flex-direction: column;
-  overflow-x: none ;
-  overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .header-pw {
   width: 100%;
